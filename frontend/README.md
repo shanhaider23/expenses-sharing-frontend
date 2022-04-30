@@ -1,5 +1,3 @@
-# [Expense App](https://expense-split1.herokuapp.com) :moneybag:
-
 > A React based web application for splitting expenses spent
 
 ![Expense](expense.gif)
