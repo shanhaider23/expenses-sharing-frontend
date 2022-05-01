@@ -1,6 +1,5 @@
 > A React based web application for splitting expenses spent
 
-![Expense](expense.gif)
 
 ## Tech Stack
 
