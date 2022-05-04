@@ -1,3 +1,5 @@
+# Expenses-sharing-app-
+Expenses Sharing app between friends on trip
 > A React based web application for splitting expenses spent
 
 
