@@ -1,0 +1,293 @@
+$Blue-Grotto: #8ec5fc;
+$Navy-Blue: #003b73;
+$Pale-Blue: #b2ffff;
+$Another-Blue: #0d47a1;
+$infoCard-Blue: #002244;
+
+$light-grey: #d4d1d1;
+body {
+  padding-top: 125px;
+  .navbar {
+    padding: 15px;
+    border-bottom: 1px solid $light-grey;
+  }
+  .navbar-light {
+    .navbar-brand {
+      color: $Navy-Blue;
+      .slash {
+        color: $Blue-Grotto;
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        display: inline;
+        cursor: pointer;
+        color: $Blue-Grotto;
+        .foo {
+          color: $Navy-Blue;
+        }
+      }
+    }
+  }
+
+  .infoCard {
+    background-color: $infoCard-Blue;
+    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
+      0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+    height: fit-content;
+    width: fit-content;
+    margin: 70px 20px;
+    padding: 10px 10px;
+    color: lightsteelblue;
+    .expNumber {
+      background-color: skyblue;
+      border-radius: 50px;
+      padding: 5px;
+    }
+    .round {
+      background-color: white;
+      color: $Navy-Blue;
+      border-radius: 50px;
+      font-weight: 600;
+      padding: 0px 7px;
+      margin-right: 10px;
+    }
+    .blocks {
+      margin: 10px;
+    }
+    .flexDisplay {
+      display: flex;
+    }
+    hr {
+      margin: 10px;
+      border-top: 1px solid #03a9f4;
+    }
+    .white {
+      color: white;
+    }
+    h4 {
+      padding: 0px 5px;
+      color: #03a9f4;
+    }
+    h6 {
+      color: #03a9f4;
+    }
+    .edit,
+    .delete {
+      cursor: pointer;
+      color: white;
+      padding: 5px;
+    }
+    .tools {
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+      margin: 0px 15px;
+    }
+    .empty {
+      margin: auto;
+      padding: 10px;
+    }
+    .calendar,
+    .person {
+      margin-right: 10px;
+      color: white;
+    }
+    span {
+      margin: 0px 5px;
+    }
+  }
+  .btn {
+    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
+      0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+    width: fit-content;
+    background-color: $Navy-Blue;
+    border-color: $Navy-Blue;
+    margin: 10px;
+  }
+  .newExpModal {
+    .modal-content {
+      background-color: $Pale-Blue;
+      color: white;
+      .modal-header {
+        color: $Navy-Blue;
+      }
+      .by-to {
+        color: $Navy-Blue;
+        margin: 10px 5px;
+        font-weight: 600;
+      }
+    }
+  }
+  .face {
+    margin: 0 5px;
+  }
+  #snackbar {
+    visibility: visible;
+    min-width: fit-content;
+    background-color: $Navy-Blue;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    padding: 16px;
+    margin-left: -125px;
+    left: 50%;
+    bottom: 30px;
+    z-index: 1;
+    display: flex;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 0.25s;
+    animation: fadein 0.5s, fadeout 0.5s 0.25s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+  }
+  .split {
+    padding-top: 40px;
+    .card {
+      box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
+        0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+      border: none;
+      background-color: $Pale-Blue;
+      padding: 10px 30px;
+      width: fit-content;
+      color: white;
+      h4 {
+        width: fit-content;
+        background-color: $Another-Blue;
+        border-radius: 50px;
+      }
+      .one {
+        padding: 5px 15px;
+      }
+      .two {
+        padding: 5px 13px;
+      }
+      .three {
+        padding: 5px 13px;
+      }
+      .form-control {
+        margin: 5px;
+      }
+      .minusBtn {
+        height: fit-content;
+        margin-top: 10px;
+        color: $Navy-Blue;
+        cursor: pointer;
+      }
+      .addBtn {
+        color: $Navy-Blue;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 25px;
+      }
+    }
+    .split_btn {
+      margin: 30px;
+      font-weight: 600;
+      background-color: #1e2032;
+      color: #bbdefb;
+    }
+  }
+  .addPerson {
+    display: flex;
+  }
+  .bottom {
+    padding-top: 8%;
+    vertical-align: text-bottom;
+  }
+  .loginInputs,
+  .signupInputs {
+    .form-control {
+      margin-bottom: 10px;
+      border-color: $Blue-Grotto;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .body {
+    .navbar-light {
+      .navbar-nav {
+        .nav-link {
+          display: block;
+        }
+      }
+    }
+    .footer {
+      position: unset;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    .split {
+      padding-top: 8px;
+      position: relative;
+      top: 27%;
+      .card {
+        margin-bottom: 25px;
+      }
+    }
+    .infoCard {
+      margin: 15px auto;
+      position: relative;
+      bottom: 380%;
+      .blocks {
+        margin: 0px 10px;
+      }
+    }
+  }
+}
