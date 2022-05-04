@@ -1,10 +1,11 @@
 {
-  "name": "expense-backend",
+  "name": "example-app",
   "version": "1.0.0",
-  "description": "Backend for Expense App",
+  "description": "a really cool app",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "build": "react-scripts build",
     "build:ui": "rmdir /s /q build && cd ../expense-split && npm run build --prod && xcopy build \"C:\\Users\\JB MADHUBALA\\Projects\\expense-split-backend\\build\" /e /i",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m ui_build && git push & npm run deploy"
@@ -14,7 +15,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.2",
     "mongoose-unique-validator": "^2.0.3"
@@ -22,5 +23,8 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^1.19.4"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
