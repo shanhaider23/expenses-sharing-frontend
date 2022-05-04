@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:5000/api/expenses";
+const url = "https://shan-expenses-backend.herokuapp.com/api/expenses";
 
 let token = null;
 
